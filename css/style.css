@@ -1,28 +1,75 @@
 
 .digital-business-card {
     display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    font-family: Arial;
+    gap: 0.5rem;
+    text-align: center;
+    background-color: beige;
+    border-radius: 15px;
+    padding: 1rem;
 }
 
 .profile-pic-box {
+    display: flex;
+    border-radius: 15px;
+    background-color: lightseagreen;
+    align-items: center;
+    padding: 0.5rem;
+}
 
+.image {
+    height: 100px;
+    width: 100px;
+    image-rendering: auto;
+    border-radius: 15px;
+    
 }
 
 .info-box {
-
+    display: flex;
+    flex-flow: column;
+    border-radius: 15px;
+    gap: 1rem;
+    padding: 0.5rem;
+    background-color: green;
 }
 
 .contact-info-box {
-
+    display: flex;
+    flex-flow: column;
+    border-radius: 15px;
+    background-color: blue;
+    padding: 0.5rem;
 }
 
 .job-info-box {
-
+    display: flex;
+    border-radius: 15px;
+    flex-flow: column;
+    background-color: purple;
+    padding: 0.5rem;
 }
 
 @media screen and (min-width: 500px) {
-
+    .info-box {
+        flex-flow: row;
+        padding: 1rem;
+    }
 }
 
 @media screen and (min-width: 720px) {
+    .digital-business-card {
+        flex-flow: row;
+    }
+    
+    .profile-pic-box {
+        padding: 1rem;
+    }
 
+    .image {
+        height: 300px;
+        width: 300px;
+    }
 }
